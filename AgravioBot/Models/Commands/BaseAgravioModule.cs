@@ -30,7 +30,7 @@ namespace AgravioBot.Models.Commands
         [Command("greymane")]
         public Task GreymaneAsync()
         {
-            var cat = EmojiOne.EmojiOne.ShortnameToUnicode(":pouting_cat:");
+            var cat = EmojiOne.EmojiOne.ShortnameToUnicode(":pouting_cat:");  // TODO TEST ON LINUX, DEPENDENCIES ARE .NET4.7 AND NOT CORE
 
             return ReplyAsync($"SYLVANAAAAAAAAAAAAAAAAAAAAAAAS {cat}");
         }
