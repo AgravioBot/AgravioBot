@@ -1,6 +1,9 @@
-﻿using Discord.Commands;
+﻿using Discord;
+using Discord.Audio;
+using Discord.Commands;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,5 +37,6 @@ namespace AgravioBot.Models.Commands
 
             return ReplyAsync($"SYLVANAAAAAAAAAAAAAAAAAAAAAAAS {cat}");
         }
+
     }
 }

@@ -36,6 +36,7 @@ namespace AgravioBot
                 .AddSingleton<DiscordSocketClient>()
                 .AddSingleton<CommandService>()
                 .AddSingleton<CommandHandler>()
+                .AddSingleton<AudioService>()
                 .BuildServiceProvider();
         }
 
