@@ -27,16 +27,13 @@ namespace AgravioBot
         {
             var config = BuildConfigFile();
 
-            // this returns a ServiceProvider that is used later to call for those services
-            // we can add types we have access to here, hence adding the new using statement:
-            // using csharpi.Services;
-            // the config we build is also added, which comes in handy for setting the command prefix!
             return new ServiceCollection()
                 .AddSingleton(config)
                 .AddSingleton<DiscordSocketClient>()
                 .AddSingleton<CommandService>()
                 .AddSingleton<CommandHandler>()
                 .AddSingleton<AudioService>()
+                .AddSingleton<LogService>()
                 .BuildServiceProvider();
         }
 

@@ -8,6 +8,7 @@
     "**/platforms"
   ],
   "enviroment": "debug",
-  "token": "Nzc4NDQwNTY3MDc1MjQxOTk0.X7SBRQ.98eLZ7rnpd3DLfpYtDPKhz1Opjw",
-  "prefix": "$"
+  "token": "",
+  "prefix": "$",
+  "audio_resources_path": "./Resources/Audio"
 }

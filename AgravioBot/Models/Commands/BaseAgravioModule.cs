@@ -12,30 +12,19 @@ namespace AgravioBot.Models.Commands
     public class BaseAgravioModule : ModuleBase
     {
 
-        [Command("wolin")]
-        public Task WolinAsync()
+        [Command("shaerox")]
+        [Alias("wolin")]
+        public Task ShaeroxAsync()
         {
             return ReplyAsync("furro");
         }
 
-        [Command("gilneas")]
-        public Task GilneasAsync()
-        {
-            return GreymaneAsync();
-        }
-
-        [Command("cringris")]
-        public Task CringrisAsync()
-        {
-            return GreymaneAsync();
-        }
-
         [Command("greymane")]
+        [Alias("cringris", "gilneas", "glenn")]
         public Task GreymaneAsync()
         {
-            var cat = EmojiOne.EmojiOne.ShortnameToUnicode(":pouting_cat:");  // TODO TEST ON LINUX, DEPENDENCIES ARE .NET4.7 AND NOT CORE
-
-            return ReplyAsync($"SYLVANAAAAAAAAAAAAAAAAAAAAAAAS {cat}");
+            const string emoji = "🐺";
+            return ReplyAsync($"SYLVAAAAAAAAAANNNAAAAAAAAAAAAAAAAAAAS {emoji}");
         }
 
     }
